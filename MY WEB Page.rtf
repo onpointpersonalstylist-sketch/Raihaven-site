@@ -1,0 +1,143 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 .SFNS-Regular_wdth_opsz140000_GRAD_wght2580000;}
+{\colortbl;\red255\green255\blue255;\red24\green26\blue30;}
+{\*\expandedcolortbl;;\cssrgb\c12157\c13725\c15686;}
+\margl1440\margr1440\vieww28600\viewh15580\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf0 Raihaven Html\'b7 html\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs40 \cf2 \expnd0\expndtw0\kerning0
+<!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <title>Raihaven Concierge</title>\
+  <script src="https://cdn.tailwindcss.com"></script>\
+  <style>\
+    /* Subtle glow effect */\
+    .glow \{\
+      transition: all 0.3s ease-in-out;\
+    \}\
+    .glow:hover \{\
+      box-shadow: 0 0 15px rgba(34,197,94,0.7), 0 0 25px rgba(34,197,94,0.5);\
+      transform: translateY(-2px);\
+    \}\
+\
+    .button-glow \{\
+      transition: all 0.3s ease-in-out;\
+    \}\
+    .button-glow:hover \{\
+      box-shadow: 0 0 10px rgba(34,197,94,0.7), 0 0 20px rgba(34,197,94,0.5);\
+      transform: scale(1.05);\
+    \}\
+\
+    h3, h4 \{\
+      text-shadow: 0 0 5px rgba(34,197,94,0.5);\
+    \}\
+  </style>\
+</head>\
+<body class="bg-gray-100 font-sans">\
+\
+<main>\
+\
+  <!-- Articles / Tips Section -->\
+  <section class="py-16 bg-gray-50">\
+    <div class="container mx-auto px-4 container-max grid gap-6 md:grid-cols-2 lg:grid-cols-3">\
+\
+      <div class="bg-white shadow rounded overflow-hidden glow">\
+        <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1580281658628-a6a6fb73e0d1?auto=format&fit=crop&w=800&q=60');"></div>\
+        <div class="p-4">\
+          <h4 class="font-semibold text-lg">Medication Management Tips</h4>\
+          <p class="text-sm text-gray-600 mt-2">Tips for preventing med errors, organizing refills, and supporting seniors with complex regimens.</p>\
+        </div>\
+      </div>\
+\
+      <div class="bg-white shadow rounded overflow-hidden glow">\
+        <div class="h-40 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1580281658628-a6a6fb73e0d1?auto=format&fit=crop&w=800&q=60');"></div>\
+        <div class="p-4">\
+          <h4 class="font-semibold text-lg">How to Prepare for In\uc0\u8209 Home Nursing Visits</h4>\
+          <p class="text-sm text-gray-600 mt-2">A simple checklist for families to ensure smooth, productive care sessions.</p>\
+        </div>\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- Jobs Application Section -->\
+  <section id="jobs" class="py-16 bg-green-50">\
+    <div class="container mx-auto px-4 container-max">\
+      <h3 class="text-3xl font-bold glow">Join the Raihaven Team</h3>\
+      <p class="mt-2 text-gray-600">Apply for caregiver, CNA, LPN, or RN roles. Complete the form below.</p>\
+\
+      <div class="bg-white p-6 rounded shadow mt-6 glow">\
+        <form class="space-y-3" id="jobApp">\
+          <input class="w-full p-2 border rounded" placeholder="Full Name" required>\
+          <input class="w-full p-2 border rounded" placeholder="Phone Number" required>\
+          <input class="w-full p-2 border rounded" placeholder="Email" required>\
+          <input class="w-full p-2 border rounded" placeholder="Position Applying For" required>\
+          <textarea class="w-full p-2 border rounded" placeholder="Experience / Certifications"></textarea>\
+          <button class="bg-green-700 text-white px-4 py-2 rounded button-glow">Submit Application</button>\
+        </form>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- Service Request Section -->\
+  <section id="request-services" class="py-16 bg-white">\
+    <div class="container mx-auto px-4 container-max">\
+      <h3 class="text-3xl font-bold glow">Request Services</h3>\
+      <p class="mt-2 text-gray-600">For individuals or facilities needing care. Fill out the form below.</p>\
+\
+      <div class="bg-gray-50 p-6 rounded shadow mt-6 glow">\
+        <form class="space-y-3" id="serviceReq">\
+          <input class="w-full p-2 border rounded" placeholder="Your Name" required>\
+          <input class="w-full p-2 border rounded" placeholder="Phone Number" required>\
+          <input class="w-full p-2 border rounded" placeholder="Email" required>\
+          <input class="w-full p-2 border rounded" placeholder="Facility or Home Address" required>\
+          <textarea class="w-full p-2 border rounded" placeholder="Describe the care needed" required></textarea>\
+          <button class="bg-green-700 text-white px-4 py-2 rounded button-glow">Submit Request</button>\
+        </form>\
+      </div>\
+    </div>\
+  </section>\
+\
+</main>\
+\
+<!-- Footer -->\
+<footer class="bg-gray-200 text-center py-4 mt-8">\
+  \'a9 <span id="year"></span> Raihaven Concierge \'97 Lodi, NJ\
+</footer>\
+\
+<!-- Scripts -->\
+<script>\
+  // Update footer year\
+  document.getElementById('year').textContent = new Date().getFullYear();\
+\
+  // Contact form submission\
+  const contactForm = document.getElementById('contactForm');\
+  if(contactForm) \{\
+    contactForm.addEventListener('submit', function(e)\{\
+      e.preventDefault();\
+      const f = new FormData(this);\
+      const subj = encodeURIComponent('Website inquiry: ' + (f.get('name') || 'No name'));\
+      const body = encodeURIComponent(\
+        'Name: ' + (f.get('name') || '') + '\\n' +\
+        'Phone: ' + (f.get('phone') || '') + '\\n' +\
+        'Message: ' + (f.get('message') || '')\
+      );\
+      window.location.href = 'mailto:RaihavenConciergeCare@gmail.com?subject=' + subj + '&body=' + body;\
+      alert('Thanks \'97 your message is ready to send via email client.');\
+    \});\
+  \}\
+</script>\
+\
+</body>\
+</html>}
